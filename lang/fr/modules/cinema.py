@@ -2,10 +2,11 @@
 import urllib, json
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
+from jarvis import configuration
 
 class Cinema:
     def __init__(self):
-        self.configuration_jarvis = json.load(open('Configuration/jarvis.json'))
+        self.configuration_jarvis = configuration
         mongo = MongoClient(self.configuration_jarvis['database']['server'], \
                             self.configuration_jarvis['database']['port'])
         self.configuration = mongo.jarvis.plugins.find_one({"name": "Cinema"})

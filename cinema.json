@@ -1,6 +1,6 @@
 {
     "name": "Cinema",
-    "version": "1.0",
+    "version": "1.0.1",
     "author": "Julien Syx",
     "enabled": 1,
     "description_fr": "Ce plugin donne les horaires d'un cinéma",
