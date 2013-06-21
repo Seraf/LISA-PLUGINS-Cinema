@@ -1,4 +1,4 @@
-JARVIS Cinema plugin
+LISA Cinema plugin
 ======
 This module is used to list films in a theater
 
