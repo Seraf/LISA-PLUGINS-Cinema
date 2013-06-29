@@ -1,9 +1,11 @@
 {
     "name": "Cinema",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Julien Syx",
     "enabled": 1,
-    "description_fr": "Ce plugin donne les horaires d'un cinéma",
+    "description": [
+        {"description_fr": "Ce plugin donne les horaires d'un cinéma"}
+    ],
     "lang": ["fr"],
     "configuration": {
         "url_Gaumont": "http://www.cinemasgaumontpathe.com/index.php?do=ajax_fiche_cinema_grille_horaire&id_cinema=",
