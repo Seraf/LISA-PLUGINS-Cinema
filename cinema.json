@@ -1,10 +1,10 @@
 {
     "name": "Cinema",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Julien Syx",
     "enabled": 1,
     "description": [
-        {"description_fr": "Ce plugin donne les horaires d'un cinéma"}
+        {"lang": "fr", "description": "Ce plugin donne les horaires d'un cinéma"}
     ],
     "lang": ["fr"],
     "configuration": {
