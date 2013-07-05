@@ -21,7 +21,7 @@ class Cinema:
         film_str = ""
         for salle in self.configuration['configuration']['salles']:
             if salle['enabled'] == 'True':
-                film_str += _('In the theater %s are played these films: ') % salle['name']
+                film_str += _('In the theater are played these films: ') % salle['name']
                 #lxml improve speed but need to be installed
                 #soup = BeautifulSoup(urllib.urlopen(configuration['url_' + salle['type']] + salle['id']),"lxml")
                 soup = BeautifulSoup(urllib.urlopen(self.configuration['configuration']['url_' + salle['type']] + salle['id']))
