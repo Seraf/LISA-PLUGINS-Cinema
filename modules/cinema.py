@@ -27,4 +27,7 @@ class Cinema:
                 soup = BeautifulSoup(urllib.urlopen(self.configuration['configuration']['url_' + salle['type']] + salle['id']))
                 if salle['type'] == "Gaumont":
                     film_str += _(' then ').join(unicode(film.get_text()) for film in soup.find_all("p", class_="titre"))
-        return json.dumps({"plugin": "Cinema", "method": "getFilms", "body": film_str})
+        return {"plugin": "Cinema",
+                "method": "getFilms",
+                "body": film_str
+        }
