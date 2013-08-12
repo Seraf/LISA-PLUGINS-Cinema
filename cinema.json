@@ -1,6 +1,6 @@
 {
     "name": "Cinema",
-    "version": "1.0.13",
+    "version": "1.2.0",
     "author": "Julien Syx",
     "enabled": 1,
     "description": [
@@ -12,6 +12,12 @@
         "salles": [
             {"id": "22", "name": "Carré Sénart", "enabled": "True", "type": "Gaumont"},
             {"id": "76", "name": "Dammarie-les-lys", "enabled": "False", "type": "Gaumont"}
-        ]
+        ],
+        "intents": {
+            "cinema_films": {
+                "method": "getFilms",
+                "corpus": {}
+            }
+        }
     }
 }
