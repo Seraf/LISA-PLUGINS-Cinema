@@ -17,7 +17,7 @@ class Cinema:
                             self.configuration_lisa['database']['port'])
         self.configuration = mongo.lisa.plugins.find_one({"name": "Cinema"})
 
-    def getFilms(self):
+    def getFilms(self, jsonInput):
         film_str = ""
         for salle in self.configuration['configuration']['salles']:
             if salle['enabled'] == 'True':
