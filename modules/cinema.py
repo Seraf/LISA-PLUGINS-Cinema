@@ -11,7 +11,8 @@ path = os.path.realpath(os.path.abspath(os.path.join(os.path.split(
 _ = translation = gettext.translation(domain='cinema', localedir=path, languages=[configuration['lang']]).ugettext
 
 class Cinema:
-    def __init__(self):
+    def __init__(self, lisa):
+        self.lisa = lisa
         self.configuration_lisa = configuration
         mongo = MongoClient(self.configuration_lisa['database']['server'],
                             self.configuration_lisa['database']['port'])
