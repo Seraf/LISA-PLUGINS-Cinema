@@ -1,8 +1,10 @@
 {
     "name": "Cinema",
-    "version": "1.2.6",
+    "version": "1.0.0",
     "author": "Julien Syx",
     "enabled": 1,
+    "pypi-url": "https://pypi.python.org/pypi/lisa-plugin-Cinema",
+    "github-url": "https://raw.githubusercontent.com/Seraf/LISA-PLUGINS-Cinema/master/lisa/plugins/Cinema/cinema.json",
     "description": [
         {"lang": "fr", "description": "Ce plugin donne les horaires d'un cinéma"}
     ],
