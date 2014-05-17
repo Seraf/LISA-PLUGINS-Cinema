@@ -16,6 +16,7 @@ class Cinema(IPlugin):
             inspect.getfile(inspect.currentframe()))[0],os.path.normpath("../lang/"))))
         self._ = translation = gettext.translation(domain='cinema',
                                                    localedir=self.path,
+                                                   fallback=True,
                                                    languages=[self.configuration_lisa['lang']]).ugettext
 
     def getFilms(self, jsonInput):

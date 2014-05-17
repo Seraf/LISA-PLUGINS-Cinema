@@ -7,8 +7,6 @@ from django.contrib.auth.decorators import login_required
 import os,json
 
 from lisa.server.web.weblisa.utils import method_restricted_to, is_ajax
-from lisa.server.web.weblisa.settings import LISA_PATH
-
 from lisa.plugins.Cinema.modules.cinema import Cinema
 
 # Template system will be fixed with Django 1.7. Each plugin will be able to have his own templates
